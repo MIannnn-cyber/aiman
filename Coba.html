@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background: #ff0000;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .sidebar {
+            width: 200px;
+            background: #f1f1f1;
+            padding: 15px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 50px;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .video {
+            background: #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .video img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">YouTube Clone</div>
+    <div class="sidebar">
+        <p>Home</p>
+        <p>Trending</p>
+        <p>Subscriptions</p>
+    </div>
+    <div class="content">
+        <div class="video">
+            <img src="thumbnail.jpg" alt="Thumbnail">
+            <p>Judul Video</p>
+        </div>
+        <div class="video">
+            <img src="thumbnail.jpg" alt="Thumbnail">
+            <p>Judul Video</p>
+        </div>
+        <div class="video">
+            <img src="thumbnail.jpg" alt="Thumbnail">
+            <p>Judul Video</p>
+        </div>
+    </div>
+</body>
+</html>
